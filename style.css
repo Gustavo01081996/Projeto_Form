@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: whitesmoke;
+
+
+}
+
+#titulo{
+    margin-top: 10rem;
+}
+
+#titulo > h1{
+    text-align: center;
+    font-family: 'Open-sans', sans-serif;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main > #form-conteudo{
+    margin-top: 2rem;
+    min-width: 40rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 6rem;
+}
+
+#form-conteudo > form > .fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+form > .fieldset-wrapper > label{
+    margin-bottom: 1rem;
+}
+
+form > .fieldset-wrapper > label > span{
+    color: red;
+}
+
+form > .fieldset-wrapper > input
+{
+    height: 3rem;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+form > .fieldset-wrapper > textarea{
+    height: 12rem;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+
+.fieldset-wrapper small{
+    visibility:hidden;
+}
+
+.fieldset-wrapper.erro small{
+    visibility: visible;
+    color: red;
+}
+.fieldset-wrapper.sucesso small{
+    visibility:hidden;
+   
+}
+
+form > #enviar{
+    border: none;
+    width: 40rem;
+    height: 4rem;
+    margin-top: 4rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+form > #enviar:hover{
+    background-color: rgb(88, 12, 12);
+    cursor: pointer;
+}
+
+#conteudo .tabela, th, td{
+    border-collapse: collapse; 
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgb(160 160 160);
+}
+th{
+    background-color: lightgray;
+    text-align: center;
+}
